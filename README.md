@@ -57,11 +57,12 @@ function App() {
 export default App;
 ```
 
-If you have more than a few cards, then it would make the most sense to use an array method in keeping with DRY principles. This would involve having a contact list, or whatever data, to be formatted as an array of objects. In that situation a function createCard() can be created which takes in a single contact, for this example, as a parameter. The card can be populated by assigning the property names identicle to how they appear on the data being used - contact data in this case. 
+If you have more than a few cards, then it would make the most sense to use an array method in keeping with DRY principles. This would involve having a contact list, or whatever data, to be formatted as an array of objects. In that situation a function createCard() can be created which takes in a single contact, for this example, as a parameter. The card can be populated by assigning the property names identicle to how they appear on the data being used - contact data in this case.  ***key must be used in this method using a unique property on the contact list to differentiate between the objects inside of the array and components rendered to the page.
 ```React
 function createCard(contact) {
   return (
     <Card
+      key={contact.id}
       name={contact.name}
       imgURL={contact.imgURL}
       phone={contact.phone}
