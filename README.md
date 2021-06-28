@@ -8,7 +8,7 @@ Constructing this app helped me to better learn and practice the following:
 
 A brief overview of the relevant React code is below:
 
-For this app a contacts list was provided with some relevant contact information and an image URL included. From the specified data in the contacts list a Card function was made.
+For this app a contacts list was provided with some relevant contact information and an image URL included. From the specified data in the contacts list a Card function was made. 
 ```React
 function Card(props) {
   return (
@@ -30,7 +30,7 @@ function Card(props) {
 }
 ```
 
-Next the Cards were added to the App function which is then exported to the index.js file. You can add as many cards as you want, two are shown here.
+Next the Cards were added to the App function which is then exported to the index.js file. You can add as many cards as you want, two are shown here. If the contact list data is organized, it may be possible to retrieve the data as shown in the first Card.
 ```React
 function App() {
   return (
@@ -38,10 +38,10 @@ function App() {
       <h1 className="heading">My Contacts</h1>
 
       <Card
-        name="Beyonce"
-        imgURL="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-        phone="+123 456 789"
-        email="b@beyonce.com"
+        name={contacts[0].name}
+        imgURL={contacts[0].imgURL}
+        phone={contacts[0].phone}
+        email={contacts[0].email}
       />
       <Card
         name="Jack Bauer"
