@@ -57,7 +57,33 @@ function App() {
 export default App;
 ```
 
-Then render:
+If you have more than a few cards, then it would make the most sense to use an array method in keeping with DRY principles. This would involve having a contact list, or whatever data, to be formatted as an array of objects. In that situation a function createCard() can be created which takes in a single contact, for this example, as a parameter. The card can be populated by assigning the property names identicle to how they appear on the data being used - contact data in this case. 
+```React
+function createCard(contact) {
+  return (
+    <Card
+      name={contact.name}
+      imgURL={contact.imgURL}
+      phone={contact.phone}
+      email={contact.email}
+    />
+  );
+}
+```
+
+Now the Map method can be used to map over each contact inside of the contacts array. For each element inside of the array, a card will then be created with the data inserted.
+```React
+function App() {
+  return (
+    <div>
+      <h1 className="heading">My Contacts</h1>
+      {contacts.map(createCard)}
+    </div>
+  );
+}
+```
+
+Then, regardless of the manner in which you decide to produce the cards, you finally render:
 ```React
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
