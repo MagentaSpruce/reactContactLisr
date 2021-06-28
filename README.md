@@ -1,4 +1,4 @@
-# reactContactLisr
+# reactContactList
 Created with CodeSandbox
 This simple React app consist of a reuseable card component which can be easily utilized in certain situations where repetitive elements are present.
 
