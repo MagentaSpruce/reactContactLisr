@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/reactContactList/static/js/main.fe0b9e13.chunk.js",
+    "main.js.map": "/reactContactList/static/js/main.fe0b9e13.chunk.js.map",
+    "runtime-main.js": "/reactContactList/static/js/runtime-main.b7ae98d5.js",
+    "runtime-main.js.map": "/reactContactList/static/js/runtime-main.b7ae98d5.js.map",
+    "static/js/2.41d2c938.chunk.js": "/reactContactList/static/js/2.41d2c938.chunk.js",
+    "static/js/2.41d2c938.chunk.js.map": "/reactContactList/static/js/2.41d2c938.chunk.js.map",
+    "index.html": "/reactContactList/index.html",
+    "precache-manifest.bc56b20c481fd28efc235c69d920788b.js": "/reactContactList/precache-manifest.bc56b20c481fd28efc235c69d920788b.js",
+    "service-worker.js": "/reactContactList/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7ae98d5.js",
+    "static/js/2.41d2c938.chunk.js",
+    "static/js/main.fe0b9e13.chunk.js"
+  ]
+}
